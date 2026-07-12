@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveEase - Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0d6efd,#4e9cff);
+}
+
+.login-container{
+    background:white;
+    width:400px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo h1{
+    color:#0d6efd;
+    font-size:28px;
+}
+
+.logo p{
+    color:#666;
+    margin-top:5px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    color:#333;
+    font-weight:bold;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.login-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#0b5ed7;
+}
+
+.links{
+    margin-top:15px;
+    text-align:center;
+}
+
+.links a{
+    text-decoration:none;
+    color:#0d6efd;
+}
+
+.links p{
+    margin-top:10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="logo">
+        <h1>DriveEase</h1>
+        <p>Vehicle Rental Management System</p>
+    </div>
+
+    <form action="/RideRent_Pro299/login.php" method="POST">
+
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="input-group">
+            <label>Login As</label>
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option>Customer</option>
+                <option>Vehicle Owner</option>
+                <option>Driver</option>
+                <option>Admin</option>
+            </select>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+    </form>
+
+    <div class="links">
+        <a href="#">Forgot Password?</a>
+        <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
