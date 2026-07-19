@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RideRent Pro - Vehicle Rental System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Navbar */
+
+nav{
+    background:#0d6efd;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200');
+    
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
+}
+
+/* Features */
+
+.section-title{
+    text-align:center;
+    margin:50px 0 30px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Vehicle Categories */
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.category{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.category img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.category h3{
+    padding:15px;
+    text-align:center;
+}
+
+/* About */
+
+.about{
+    padding:60px;
+    text-align:center;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+    <h2>RideRent Pro</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Vehicles</a></li>
+        <li><a href="#">Drivers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Smart Vehicle Rental Platform</h1>
+
+        <p>
+            Rent Vehicles With or Without Professional Drivers
+        </p>
+
+        <a href="login.html" class="btn">Get Started</a>
+
+        <a href="#" class="btn">Explore Vehicles</a>
+
+    </div>
+
+</section>
+
+<!-- Features -->
+
+<h2 class="section-title">Our Features</h2>
+
+<section class="features">
+
+    <div class="card">
+        <h3>Vehicle Rental</h3>
+        <p>Rent cars, bikes and microbuses anytime.</p>
+    </div>
+
+    <div class="card">
+        <h3>Professional Drivers</h3>
+        <p>Choose verified drivers with ratings.</p>
+    </div>
+
+    <div class="card">
+        <h3>Secure Booking</h3>
+        <p>Fast and secure booking management.</p>
+    </div>
+
+</section>
+
+<!-- Categories -->
+
+<h2 class="section-title">Vehicle Categories</h2>
+
+<section class="categories">
+
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800">
+        <h3>Cars</h3>
+    </div>
+
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800">
+        <h3>Motorcycles</h3>
+    </div>
+
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800">
+        <h3>Microbus</h3>
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
+    <h2 class="section-title">About RideRent Pro</h2>
+
+    <p>
+        RideRent Pro is a smart vehicle rental management system
+        where customers can rent vehicles with or without
+        professional drivers. Vehicle owners can manage
+        vehicles and drivers, while administrators ensure
+        platform security through verification and monitoring.
+    </p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>RideRent Pro Vehicle Rental System</h3>
+
+    <p>
+        CSE 327 Software Engineering Project
+    </p>
+
+</footer>
+
+</body>
+</html>
