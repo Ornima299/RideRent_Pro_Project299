@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin'])) {
 }
 require_once __DIR__ . '/../config/database.php';
 
-// Data Count with Error Handling
+// Data Count with Error Handling, Admin table user count
 $totalUsers = 0;
 $userQuery = mysqli_query($conn, "SELECT * FROM admin");
 if ($userQuery) { $totalUsers = mysqli_num_rows($userQuery); }
